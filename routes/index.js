@@ -17,7 +17,7 @@ exports.unblock = function(req, res) {
   function puts(error, stdout, stderr) {
     sys.puts(stdout)
   }
-  exec("casperjs casperjs/test.js " + config.conf.router_username + " "
+  exec("casperjs casperjs/unblock.js " + config.conf.router_username + " "
     + config.conf.router_password + " " + config.conf.router_ip, puts);
   res.end('OK');
 };
