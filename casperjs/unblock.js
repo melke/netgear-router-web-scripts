@@ -6,7 +6,7 @@ casper.start();
 
 casper.setHttpAuth(casper.cli.get(0), casper.cli.get(1));
 
-casper.thenOpen('http://192.168.0.1/DEV_control.htm', function() {
+casper.thenOpen('http://' + casper.cli.get(2) + '/DEV_control.htm', function() {
   this.echo(this.getTitle());
   this.echo('Trying to disable access control');
 });
