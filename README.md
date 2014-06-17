@@ -10,7 +10,7 @@ I wrote a few simple casperjs scripts that logs into the web admin interface and
 These scripts are obviously very specific for Netgear Nighthawk, because the scripts will presume a very specific DOM
 structure in the web pages. Feel free to fork and support other router models.
 
-The scripts only turn access control on and off on a global level. Make sure that you already have blocked individual mac-addresses using
+The scripts only turn access control on and off on a global level. Make sure that you have already set up blocking for individual mac-addresses using
 a web browser.
 
 The scripts can be run by themselves or through the simple enclosed nodejs webapp that calls the casperjs scripts.
